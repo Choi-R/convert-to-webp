@@ -1,4 +1,4 @@
-# OptiConvert - Next-Gen WebP Converter
+# ChoiConvert - A simple WebP Converter
 
 <div align="center">
   
@@ -13,9 +13,7 @@
 
 ## 📖 About
 
-> "I used WebP converters a lot in my work, so why don't I just make it myself?"
-
-**OptiConvert** is a tool born out of necessity. As a developer/creator, I constantly needed to optimize images for the web, but existing online tools were either slow, ridden with ads, or uploaded my private files to their servers.
+**ChoiConvert** is a tool born out of necessity. As a developer/creator, I constantly needed to optimize images for the web, but existing online tools were either slow, ridden with ads, or uploaded my private files to their servers.
 
 I built this tool to solve those problems with a focus on **speed**, **privacy**, and **aesthetics**.
 
@@ -38,7 +36,7 @@ I built this tool to solve those problems with a focus on **speed**, **privacy**
 
 ## 🚀 How to Use
 
-Since OptiConvert runs entirely in the browser, you don't need to install any dependencies.
+Since ChoiConvert runs entirely in the browser, you don't need to install any dependencies.
 
 1.  Clone the repository:
     ```bash
