@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiConvert - Ultra-Fast WebP Converter</title>
+    <meta name="description" content="Convert and optimize your images to WebP instantly in your browser.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="app-header">
+            <h1>OptiConvert</h1>
+            <p>Next-Gen Image Optimization</p>
+        </header>
+
+        <section class="upload-zone" id="dropZone">
+            <div class="upload-content">
+                <svg class="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
+                    </path>
+                </svg>
+                <h2>Drop your image here</h2>
+                <p>or click to browse</p>
+                <input type="file" id="fileInput" accept="image/png, image/jpeg, image/jpg" multiple hidden>
+            </div>
+        </section>
+
+        <section class="editor-panel hidden" id="editorPanel">
+            <div class="controls-header">
+                <div class="slider-group">
+                    <label for="qualitySlider">Global Quality: <span id="qualityValue">80%</span></label>
+                    <input type="range" id="qualitySlider" min="0" max="100" value="80" step="1">
+                </div>
+                <div class="resize-group">
+                    <label for="maxWidthSelect">Max Width:</label>
+                    <div class="select-wrapper">
+                        <select id="maxWidthSelect">
+                            <option value="0">Original</option>
+                            <option value="1920">1920px (FHD)</option>
+                            <option value="1280">1280px (HD)</option>
+                            <option value="800">800px (Web)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="addMoreBtn" class="btn btn-secondary btn-sm">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
+                            </path>
+                        </svg>
+                        Add Images
+                    </button>
+                    <button id="clearAllBtn" class="btn btn-danger btn-sm">Clear All</button>
+                    <input type="file" id="addMoreInput" accept="image/png, image/jpeg, image/jpg" multiple hidden>
+                </div>
+            </div>
+
+            <div class="results-grid" id="resultsGrid">
+                <!-- Image Cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
